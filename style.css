@@ -293,8 +293,8 @@ a:hover {
 }
 
 .navbar-brand {
-    height: auto;
-    padding: 3px 15px;
+    display: flex;
+    align-items: center;
     font-size: 25px;
     font-weight: normal;
     font-weight: 600;
@@ -302,13 +302,32 @@ a:hover {
 }
 
 .navbar-brand img {
+    height: 72px;
     max-height: 200px;
-    margin: 0 5px 0 0;
     display: inline;
 }
 
 .navbar-brand img[src$=svg] {
     min-width: 100px;
+}
+
+.navbar-brand__logo--headings {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar-brand__heading {
+
+    font-family: 'Merienda', cursive;
+    margin: 0;
+}
+
+.navbar-brand__subtitle {
+
+    margin: 0;
+    text-transform: uppercase;
 }
 
 .nav-center .navbar-brand img {
@@ -959,8 +978,10 @@ h4 {
         box-shadow: none;
     }
     .navbar-brand img {
-        max-height: 40px;
         width: auto;
+    }
+    .navbar-header {
+        display: flex;
     }
     .nav-invert .navbar-header {
         float: none;
