@@ -15,13 +15,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
 	
     
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
+	<script src="./js/jquery-2.1.0.js" defer></script>
+	<script src="./js/bootstrap.js" defer></script>
+	<script src="./js/blocs.js" defer></script>
 	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script src="./js/gmaps.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
+	<script src="./js/gmaps.js" defer></script>
+	<script src="./js/jqBootstrapValidation.js" defer></script>
+	<script src="./js/formHandler.js" defer></script>
 
     <title>La Panthère, agence web à Lyon</title>
 
@@ -167,7 +167,7 @@
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/1.jpg" alt="photo de journaux. Agence webdesign La Panthère à Lyon. Faire la refonte du site web de son journal local" class="img-responsive portfolio-thumb"></a>
+				<a href="#" data-lightbox="img/1.webp" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/1.webp" alt="photo de journaux. Agence webdesign La Panthère à Lyon. Faire la refonte du site web de son journal local" class="img-responsive portfolio-thumb"></a>
 				<h3 class="mg-md text-center">
 					Refonte d'un site web pour un journal local
 				</h3>
@@ -176,7 +176,7 @@
 				</p>
 			</article>
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/2.jpg" class="img-responsive portfolio-thumb" alt="Photographe prenant une photo. Agence webdesign La Panthère à Lyon. meilleure agence pour la création d'un site web pour photographes"></a>
+				<a href="#" data-lightbox="img/2.webp" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/2.webp" class="img-responsive portfolio-thumb" alt="Photographe prenant une photo. Agence webdesign La Panthère à Lyon. meilleure agence pour la création d'un site web pour photographes"></a>
 				<h3 class="mg-md text-center">
 					Création d'un site web pour photographes
 				</h3>
@@ -187,7 +187,7 @@
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="img/3.bmp" class="img-responsive portfolio-thumb" alt="Matériel pour reportage vidéo et photo. Agence La Panthère : Création d'un site web pour voyageur"></a>
+				<a href="#" data-lightbox="img/3.webp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="img/3.webp" class="img-responsive portfolio-thumb" alt="Matériel pour reportage vidéo et photo. Agence La Panthère : Création d'un site web pour voyageur"></a>
 				<h3 class="mg-md text-center">
 					Création d'un site internet pour un voyageur
 				</h3>
@@ -196,7 +196,7 @@
 				</p>
 			</article>
 			<article class="col-sm-6">
-				<a href="#" data-lightbox="img/4.bmp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.bmp" class="img-responsive portfolio-thumb" alt="weddingplanner sur son pc. Quelle meilleure agence pour la création d'un site web pour agence de mariage ?"></a>
+				<a href="#" data-lightbox="img/4.webp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.webp" class="img-responsive portfolio-thumb" alt="weddingplanner sur son pc. Quelle meilleure agence pour la création d'un site web pour agence de mariage ?"></a>
 				<h3 class="mg-md text-center">
 					Conception d'un site pour une agence de mariage
 				</h3>
@@ -232,27 +232,27 @@
 				<form id="form_1" novalidate data-success-msg="Votre message est envoyé." data-fail-msg="Désolé, il semble que notre serveur de messagerie ne réponde pas, veuillez nous excuser !">
 					<div class="form-group">
 						
-						<input id="name" class="form-control" placeholder="Nom" required>
+						<input id="name" class="form-control" placeholder="Nom" aria-labelledby="nom" required>
 					</div>
 					<div class="form-group">
 						
-						<input id="email" class="form-control" type="email" placeholder="Adresse email" required>
+						<input id="email" class="form-control" type="email" placeholder="Adresse email"aria-labelledby="adresse mail" required>
 					</div>
 					<div class="form-group">
 						
-						<input class="form-control" type="text" placeholder="Comment nous avez vous connu ?" required id="input_504">
+						<input class="form-control" type="text" placeholder="Comment nous avez vous connu ?"aria-labelledby="comment nous avez vous connu ?" required id="input_504">
 					</div>
 					<div class="form-group">
-						<textarea id="message" class="form-control" rows="4" cols="50" placeholder="Brief de votre projet (Ajoutez autant de détails que nécessaire)" required></textarea>
+						<textarea id="message" class="form-control" rows="4" cols="50" placeholder="Brief de votre projet (Ajoutez autant de détails que nécessaire)" aria-labelledby="comment nous avez vous connu ?" required></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
 					</button>
 				</form>
 			</div>
-			<div class="col-sm-6">
+			<map class="col-sm-6">
 				<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=4.828319549560548%2C45.76878589457775%2C4.8317688703537%2C45.770033830829306&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/45.76941/4.83004&amp;layers=N">Afficher une carte plus grande</a></small>
-			</div>
+			</map>
 			<div class="col-sm-6">
 				<p>
 					contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
