@@ -20,6 +20,8 @@
 	<script src="./js/blocs.js"></script>
 	<script src="./js/jquery.touchSwipe.js" defer></script>
 	<script src="./js/gmaps.js"></script>
+	<script src="./js/jqBootstrapValidation.js"></script>
+	<script src="./js/formHandler.js"></script>
 
     <title>La Panthère, agence web à Lyon</title>
 
@@ -222,7 +224,50 @@
 </section>
 <!-- bloc-5-cta END -->
 
-<!-- Footer - bloc-8 -->
+<!-- bloc-6 -->
+<div class="bloc bgc-white l-bloc" id="bloc-7">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-sm-6">
+				<form id="form_1" novalidate data-success-msg="Your message has been sent." data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+					<div class="form-group">
+						
+						<input id="name" class="form-control" placeholder="Nom" autofocus="autofocus" required>
+					</div>
+					<div class="form-group">
+						
+						<input id="email" class="form-control" type="email" placeholder="Adresse email" required>
+					</div>
+					<div class="form-group">
+						
+						<input class="form-control" type="text" placeholder="Comment nous avez vous connu ?" required id="input_504">
+					</div>
+					<div class="form-group">
+						<textarea id="message" class="form-control" rows="4" cols="50" placeholder="Brief de votre projet (Ajoutez autant de détails que nécessaire)" required></textarea>
+					</div> 
+					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+						Envoyer
+					</button>
+				</form>
+			</div>
+			<div class="col-sm-6">
+				<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=4.828319549560548%2C45.76878589457775%2C4.8317688703537%2C45.770033830829306&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/45.76941/4.83004&amp;layers=N">Afficher une carte plus grande</a></small>
+			</div>
+			<div class="col-sm-6">
+				<p>
+					contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-6 END -->
+
+<!-- ScrollToTop Button -->
+<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+<!-- ScrollToTop Button END-->
+
+<!-- Footer - bloc-7 -->
 <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
@@ -256,7 +301,7 @@
 		</div>
 	</div>
 </footer>
-<!-- Footer - bloc-8 END -->
+<!-- Footer - bloc-7 END -->
 
 </main>
 <!-- Principal conteneur END -->
